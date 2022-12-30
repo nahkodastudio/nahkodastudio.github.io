@@ -1,0 +1,177 @@
+:root {
+    ---pr-color: #34B3F1;
+    ---grey1-color: #F2F2F2;
+    ---grey2-color: #9b9b9b;
+    ---grey3-color: #ddd;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#detail-produk {
+    margin-top: 100px;
+}
+
+/* card */
+
+
+.card-wrapper {
+    color: red;
+    width: 340px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slide-content {
+    height: 60vh;
+    background-color: transparent;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+
+.slide-container {
+
+    margin-top: 24px;
+    max-width: 500px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.slide-container .swiper-navBtn {
+    color: var(---pr-color);
+    transition: all 0.2s ease;
+}
+
+.slide-container .swiper-navBtn:hover {
+
+    color: #0f79cf;
+    transition: all 0.2s ease;
+}
+
+
+.swiper-pagination-bullet {
+    background-color: var(---grey1-color);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(---pr-color);
+}
+
+
+.slide-container.swiper-navBtn::before,
+.slide-container.swiper-navBtn::after {
+    font-size: 35px;
+}
+
+.slide-container.swiper-button-next {
+    right: 0;
+}
+
+.slide-container.swiper-button-prev {
+    left: 0;
+}
+
+/* Detail Produk desk */
+.deskripsi-produk {
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deskripsi-produk h4 {
+    font-size: 20px;
+    opacity: 80%;
+}
+
+.header p {
+    text-align: justify;
+}
+
+.varian span {
+    text-transform: uppercase;
+    margin-top: 8px;
+    color: var(---pr-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid var(---pr-color);
+}
+
+
+/* btn beli */
+
+.sosmed-button {
+    margin-top: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    border: solid 1px var(black);
+    background: linear-gradient(45deg, #45ad30, #0da00d, #0cb422);
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+    letter-spacing: 0.5px;
+}
+
+.sosmed-button:hover {
+    transition: all 0.3s ease-in;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    width: 100%;
+    cursor: pointer;
+    background: linear-gradient(45deg, #0f9b0f, #3ab122, #00a516);
+    color: #fff;
+}
+
+.sosmed-button i {
+    margin-right: 16px;
+}
+
+/* end of btn beli */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+
+
+    #detail-produk {
+        padding-top: 16px;
+        margin-top: 24px;
+    }
+
+    .slide-content {
+        margin: 0 -10px;
+        margin-bottom: 32px;
+    }
+
+    .slide-container .swiper-navBtn {
+        display: none;
+    }
+
+    .dp-footer {
+        width: 100%;
+    }
+
+}
